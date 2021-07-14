@@ -33,6 +33,10 @@ h3{
   font-size: 28px;
   font-weight: 700;
 }
+h4{
+  font-size: 18px;
+  font-weight: 400;
+}
 /*------------------
 top banner
 -------------------*/
@@ -61,6 +65,7 @@ top banner
     top: 300px;
     left: 0;
     background-color: rgba(255, 255, 0, 0.322);
+    transform: scale(0.1);
   }
 
   50% {
@@ -99,6 +104,7 @@ top banner
     top: 200px;
     right: 600px;
     background-color: rgba(255, 255, 0, 0.342);
+    transform: scale(0.5);
   }
 
   100% {
@@ -119,6 +125,7 @@ top banner
     top: 350px;
     left: 400px;
     background-color: rgba(0, 204, 255, 0.295);
+    transform: scale(0.9);
   }
 
   75% {
@@ -180,7 +187,6 @@ top banner
   height: 438px;
   z-index: 3;
 }
-
 /*------------------
 top-players
 -------------------*/
@@ -214,3 +220,141 @@ top-players
 /*------------------
 footer
 -------------------*/
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo img{
+  width: 483.87px;
+  height: 110px;
+}
+.footer-social-media img{
+  width: 32px;
+  height: 32px;
+}
+/*------------------
+mobile
+-------------------*/
+@media only screen and (max-width:688px){
+  main{
+    margin: 0px;
+    padding: 0px;
+    width: 688px;
+  }
+  .top-banner{
+    margin: -120px;
+    width: 100%;
+  }
+  .banner-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .banner-title {
+    font-size: 36px;
+  }
+  .banner-image {
+    margin-top: 50px;
+    margin-left: -50px;
+    width: 100%;
+  }
+  .banner-image img {
+    width: 329px;
+    height: 260px;
+  }
+  .players{
+    display: flex;
+    flex-direction: column;
+    margin-left: -92px;
+  }
+  .player {
+    padding: 10px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 200px;
+    height: auto;
+  }
+
+  .footer-social-media img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media only screen and (min-width: 688px) and (max-width:992px) {
+  main {
+    margin: 0px;
+    padding: 0px;
+    width: 688px;
+  }
+
+  .top-banner {
+    margin: -120px;
+    width: 100%;
+  }
+
+  .banner-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .banner-title {
+    font-size: 36px;
+  }
+
+  .banner-image {
+    margin-top: 50px;
+    margin-left: -50px;
+    width: 100%;
+  }
+
+  .banner-image img {
+    width: 329px;
+    height: 260px;
+  }
+
+  .players {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player {
+    padding: 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 200px;
+    height: auto;
+  }
+
+  .footer-social-media img {
+    width: 12px;
+    height: 12px;
+  }
+}
