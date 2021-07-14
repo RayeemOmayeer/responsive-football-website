@@ -11,21 +11,7 @@ body{
 main{
   margin-top: -150px;
 }
-.animated-ball, .animated-ball-2, .animated-ball-3 {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: red;
-  position: absolute;
-  animation: ping-pong 14s ease-in-out 1s infinite alternate;
-  z-index: 1;
-}
-.animated-ball-2{
-  animation: ping-pong-2 20s ease-in-out 1s infinite alternate;
-}
-.animated-ball-3{
-  animation: ping-pong-3 35s ease-in-out 1s infinite alternate;
-}
+
 button{
   display: block;
   font-size: 16px;
@@ -38,6 +24,36 @@ button{
 button:hover{
   width: 35%;
   background-color: #cf1157;
+}
+p{
+  font-size: 16px;
+  color: #6C6C6C;
+}
+h3{
+  font-size: 28px;
+  font-weight: 700;
+}
+/*------------------
+top banner
+-------------------*/
+.animated-ball,
+.animated-ball-2,
+.animated-ball-3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  animation: ping-pong 14s ease-in-out 1s infinite alternate;
+  z-index: 1;
+}
+
+.animated-ball-2 {
+  animation: ping-pong-2 20s ease-in-out 1s infinite alternate;
+}
+
+.animated-ball-3 {
+  animation: ping-pong-3 35s ease-in-out 1s infinite alternate;
 }
 /*animation*/
 @keyframes ping-pong {
@@ -52,17 +68,20 @@ button:hover{
     left: 400px;
     background-color: rgba(0, 204, 255, 0.315);
   }
+
   75% {
     top: 200px;
     left: 600px;
     background-color: rgba(0, 255, 55, 0.37);
   }
+
   100% {
     top: 100px;
     left: 1000px;
     background-color: rgba(255, 0, 255, 0.37);
   }
 }
+
 @keyframes ping-pong-2 {
   0% {
     top: 100px;
@@ -88,6 +107,7 @@ button:hover{
     background-color: rgba(255, 0, 255, 0.548);
   }
 }
+
 @keyframes ping-pong-3 {
   0% {
     top: 100px;
@@ -113,20 +133,20 @@ button:hover{
     background-color: rgba(255, 0, 255, 0.301);
   }
 }
-@keyframes top-banner-animation{
-  0%{
+
+@keyframes top-banner-animation {
+  0% {
     background-color: #2D25A0;
   }
+
   50% {
     background-color: #5a25a0;
   }
+
   100% {
     background-color: #2D25A0;
   }
 }
-/*------------------
-top banner
--------------------*/
 .top-banner{
   background-color: #2D25A0;
   animation-name: top-banner-animation;
@@ -160,3 +180,37 @@ top banner
   height: 438px;
   z-index: 3;
 }
+
+/*------------------
+top-players
+-------------------*/
+.top-players{
+  margin: -70px 100px 100px 100px;
+}
+.players{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 27px;
+  
+}
+.player{
+  width: 330px;
+  height: 474px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  border-radius: 5px;
+}
+.player-image img{
+  width: 300px;
+  height: 256px;
+}
+.player-details{
+  width: 300px;
+  height: 154px;
+}
+/*------------------
+footer
+-------------------*/
